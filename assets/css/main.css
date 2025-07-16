@@ -68,6 +68,10 @@
   scroll-behavior: smooth;
 }
 
+.container {
+  max-width: 90% !important; /* Overrides Bootstrap's default container width. Remove this if not needed */
+}
+
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
@@ -810,12 +814,12 @@ section,
 }
 
 .hero-img {
-  background: url("../img/FINAL_CLOUD.png") center center no-repeat;
+  /* background: center center no-repeat; */
   background-size: cover;
   border-radius: 20px;
   padding: 10px;
   position: relative;
-  min-height: 500px;
+  /* min-height: 500px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -879,7 +883,7 @@ section,
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
   .hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -895,7 +899,7 @@ section,
   .hero .btn-watch-video {
     font-size: 13px;
   }
-}
+} */
 
 @keyframes up-down {
   0% {
@@ -2801,7 +2805,7 @@ section,
   transform: scale(1.03);
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.13);
 }
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .galeria-fotos-section .galeria-foto-card {
     height: 140px;
     border-radius: 18px;
@@ -2809,7 +2813,7 @@ section,
   .galeria-fotos-section .galeria-foto-card img {
     border-radius: 18px;
   }
-}
+} */
 
 /* ---- Sección Why KidKit ---- */
 .why-kidkit-section {
@@ -2851,6 +2855,12 @@ section,
   font-size: 2.2rem;
   color: #fff;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.why-kidkit-section .why-kidkit-icon:hover {
+  transform: translateY(-10px);
 }
 .why-kidkit-bg1 {
   background: #00bfcf;
@@ -2876,29 +2886,88 @@ section,
 }
 
 @media (max-width: 991px) {
-  .why-kidkit-section .why-kidkit-circle {
-    width: 180px;
-    height: 180px;
-    font-size: 1.2rem;
+  .why-kidkit-section .row {
+    position: relative;
+    min-height: 360px;
   }
-  .why-kidkit-section .why-kidkit-icon {
-    width: 60px;
-    height: 60px;
-    font-size: 1.3rem;
+
+  .why-kidkit-section .why-kidkit-circle {
+    width: 220px; /* Adjusting width and height will make the big circle smaller or bigger */
+    height: 220px;
+    font-size: 1.2rem;
+    margin: 0 auto;
+  }
+
+  #whyKidkitIcons {
+    /* position: relative; */
+    /* width: 300px; */
+    /* height: 300px; */
+    margin: -455px auto 0; /* Changing the -455px value will adjust the vertical position */
+    right: auto;
+    left: auto;
+  }
+
+  #whyKidkitIcons .col-4 {
+    position: absolute;
+    padding: 0;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 65px; /* This increases or decrases the circle around which the icons are arranged */
+  }
+
+  /* Updated transform rules for 991px viewport */
+  /* Updated transform rules */
+  #whyKidkitIcons .col-4:nth-child(1) {
+    transform: rotate(0deg) translateX(-50%) translateY(-120px);
+  }
+  #whyKidkitIcons .col-4:nth-child(2) {
+    transform: rotate(60deg) translateX(-50%) translateY(-120px);
+  }
+  #whyKidkitIcons .col-4:nth-child(3) {
+    transform: rotate(120deg) translateX(-50%) translateY(-120px);
+  }
+  #whyKidkitIcons .col-4:nth-child(4) {
+    transform: rotate(180deg) translateX(-50%) translateY(-120px);
+  }
+  #whyKidkitIcons .col-4:nth-child(5) {
+    transform: rotate(240deg) translateX(-50%) translateY(-120px);
+  }
+  #whyKidkitIcons .col-4:nth-child(6) {
+    transform: rotate(300deg) translateX(-50%) translateY(-120px);
   }
 }
 
-/* Efecto de expansión y sombra en hover/active para los íconos de why-kidkit */
-.why-kidkit-section .why-kidkit-icon:hover,
-.why-kidkit-section .why-kidkit-icon.active,
-.why-kidkit-section .why-kidkit-icon:focus {
-  transform: scale(1.15);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
-  z-index: 2;
-}
-.why-kidkit-section .why-kidkit-icon {
-  transition: transform 0.18s, box-shadow 0.18s;
-}
+/* @media (max-width: 576px) {
+  #whyKidkitIcons {
+    width: 200px;
+    height: 200px;
+  }
+
+  #whyKidkitIcons .col-4:nth-child(1) {
+    transform: rotate(0deg) translateY(-100px) rotate(0deg);
+  }
+  #whyKidkitIcons .col-4:nth-child(2) {
+    transform: rotate(60deg) translateY(-100px) rotate(-60deg);
+  }
+  #whyKidkitIcons .col-4:nth-child(3) {
+    transform: rotate(120deg) translateY(-100px) rotate(-120deg);
+  }
+  #whyKidkitIcons .col-4:nth-child(4) {
+    transform: rotate(180deg) translateY(-100px) rotate(-180deg);
+  }
+  #whyKidkitIcons .col-4:nth-child(5) {
+    transform: rotate(240deg) translateY(-100px) rotate(-240deg);
+  }
+  #whyKidkitIcons .col-4:nth-child(6) {
+    transform: rotate(300deg) translateY(-100px) rotate(-300deg);
+  }
+
+  .why-kidkit-section .why-kidkit-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.1rem;
+  }
+} */
 
 /* ---- Testimonios tipo card con foto ---- */
 .testimonial-card {
@@ -3251,7 +3320,7 @@ section,
 }
 
 .feature-card-kidkit::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
