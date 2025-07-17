@@ -32,7 +32,7 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #009fe3; /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #009fe3bb; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -227,6 +227,16 @@ h6 {
   --background-color: rgba(1, 143, 209, 0.9);
 }
 
+.scrolled .header .navmenu a,
+.scrolled .header .navmenu a:focus {
+  color: #fff !important;
+}
+.scrolled .header .navmenu li:hover > a,
+.scrolled .header .navmenu .active,
+.scrolled .header .navmenu .active:focus {
+  color: #e6e6e6 !important;
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -291,6 +301,10 @@ h6 {
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
+  }
+
+  .scrolled .header .navmenu > ul > li > a:before {
+    background-color: #fff !important;
   }
 
   .navmenu a:hover:before,
@@ -1073,6 +1087,10 @@ section,
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
+.features {
+  background: linear-gradient(90deg, #f8fcff 0%, #fffbe6 100%);
+}
+
 .features .features-image {
   position: relative;
   min-height: 400px;
@@ -2151,9 +2169,10 @@ section,
 }
 
 .marcas-section {
-  background: #fff;
+  background: linear-gradient(90deg, #f8fcff 0%, #fffbe6 100%);
   padding: 40px 0 30px 0;
 }
+
 .marcas-title {
   color: #018FD1;
   font-weight: 700;
@@ -2161,9 +2180,11 @@ section,
   margin-bottom: 32px;
   font-family: 'Sniglet', cursive;
 }
+
 .marcas-logos-row {
   margin-top: 0;
 }
+
 .marcas-logo {
   max-width: 100%;
   max-height: 60px;
