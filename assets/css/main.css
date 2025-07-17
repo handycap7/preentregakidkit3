@@ -24,7 +24,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #2c4964; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #f88910; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #bc79cb; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -36,7 +36,7 @@
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #f88910; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #bc79cb; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -55,7 +55,7 @@
 }
 
 .accent-background {
-  --background-color: #f88910;
+  --background-color: #bc79cb;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --accent-color: #ffffff;
@@ -69,7 +69,7 @@
 }
 
 .container {
-  max-width: 90% !important; /* Overrides Bootstrap's default container width. Remove this if not needed */
+  max-width: 75% !important; /* Overrides Bootstrap's default container width. Remove this if not needed */
 }
 
 /*--------------------------------------------------------------
@@ -227,15 +227,15 @@ h6 {
   --background-color: rgba(1, 143, 209, 0.9);
 }
 
-.scrolled .header .navmenu a,
+/* .scrolled .header .navmenu a,
 .scrolled .header .navmenu a:focus {
-  color: #fff !important;
+  color: rgba(1, 143, 209, 0.9) !important;
 }
 .scrolled .header .navmenu li:hover > a,
 .scrolled .header .navmenu .active,
 .scrolled .header .navmenu .active:focus {
   color: #e6e6e6 !important;
-}
+} */
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -776,7 +776,7 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   position: relative;
 }
 
@@ -786,8 +786,8 @@ section,
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  font-family: 'Sniglet', cursive;
-  color: #018FD1;
+  font-family: "Sniglet", cursive;
+  color: #018fd1;
 }
 
 .section-title h2:after {
@@ -820,7 +820,7 @@ section,
   font-size: 64px;
   font-weight: 900;
   line-height: 56px;
-  font-family: 'Sniglet', cursive;
+  font-family: "Sniglet", cursive;
 }
 
 .hero p {
@@ -853,7 +853,7 @@ section,
 }
 
 .hero .btn-get-started {
-  background: #f88910;
+  background: #bc79cb;
   border-radius: 18px;
   color: #fff;
   border: none;
@@ -868,7 +868,7 @@ section,
 
 .hero .btn-get-started:hover,
 .hero .btn-get-started:focus {
-  background: #d97706;
+  background: #9c59ab;
   color: #fff;
 }
 
@@ -1126,7 +1126,7 @@ section,
   color: #ffffff;
   font-size: 48px;
   font-weight: 700;
-  font-family: 'Sniglet', cursive;
+  font-family: "Sniglet", cursive;
 }
 
 .testimonials .section-title p {
@@ -1141,7 +1141,7 @@ section,
 
 .testimonials .testimonial-item {
   box-sizing: content-box;
-  min-height: 320px;
+  /* min-height: 320px; */
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1516,12 +1516,12 @@ section,
 /* Override featured plan button to match others */
 .pricing .featured .buy-btn {
   background: #fff !important;
-  color: #ff9800 !important;
-  border: 1px solid #ff9800 !important;
+  color: #bc79cb !important;
+  border: 1px solid #bc79cb !important;
 }
 
 .pricing .featured .buy-btn:hover {
-  background: #ff9800 !important;
+  background: #bc79cb !important;
   color: #fff !important;
 }
 
@@ -2110,8 +2110,8 @@ section,
   letter-spacing: 1px;
   font-size: 48px;
   margin-bottom: 0.5rem;
-  color: #018FD1;
-  font-family: 'Sniglet', cursive;
+  color: #018fd1;
+  font-family: "Sniglet", cursive;
 }
 .como-funciona .section-title p {
   color: #444;
@@ -2131,6 +2131,41 @@ section,
 .cf-img-circle {
   margin-top: 0;
   margin-bottom: 18px;
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.cf-img-circle:hover {
+  animation: wiggle 0.5s ease-in-out infinite alternate;
+}
+
+.wiggle-img {
+  width: 100%;
+  height: auto;
+}
+
+.wiggle-img:hover {
+  animation: wiggle 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-3deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  75% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.cf-img-circle img {
+  width: 100%;
 }
 .cf-num {
   display: inline-block;
@@ -2156,6 +2191,7 @@ section,
   font-size: 1.1rem;
   margin-bottom: 8px;
   margin-top: 8px;
+  min-height: 55px;
 }
 .cf-desc {
   color: #444;
@@ -2174,11 +2210,11 @@ section,
 }
 
 .marcas-title {
-  color: #018FD1;
+  color: #018fd1;
   font-weight: 700;
   font-size: 48px;
   margin-bottom: 32px;
-  font-family: 'Sniglet', cursive;
+  font-family: "Sniglet", cursive;
 }
 
 .marcas-logos-row {
@@ -2191,7 +2227,13 @@ section,
   margin: 0 auto;
   display: block;
   filter: none;
+  transition: transform 0.3s ease;
 }
+
+.marcas-logo:hover {
+  animation: wiggle 0.5s ease-in-out infinite alternate;
+}
+
 .faber-logo {
   max-height: 140px !important;
   width: auto !important;
@@ -2388,9 +2430,9 @@ section,
 }
 
 .kidkit-footer {
-  background: #018FD1;
+  background: #018fd1;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   border-top: none;
 }
 .kidkit-footer .footer-logo {
@@ -2420,7 +2462,7 @@ section,
   transition: color 0.2s;
 }
 .kidkit-footer .footer-links a:hover {
-  color: #ff9800;
+  color: #bc79cb;
 }
 .kidkit-footer .footer-social a {
   color: #fff;
@@ -2433,7 +2475,7 @@ section,
   margin-right: 0;
 }
 .kidkit-footer .footer-social a:hover {
-  color: #ff9800;
+  color: #bc79cb;
 }
 .kidkit-footer .footer-newsletter {
   background: #fff;
@@ -2452,7 +2494,7 @@ section,
   flex: 1 1 auto;
 }
 .kidkit-footer .footer-btn {
-  background: #ff9800;
+  background: #bc79cb;
   border: none;
   color: #fff;
   border-radius: 0 22px 22px 0;
@@ -2464,7 +2506,7 @@ section,
   transition: background 0.2s;
 }
 .kidkit-footer .footer-btn:hover {
-  background: #e68900;
+  background: #9c59ab;
 }
 @media (max-width: 991px) {
   .kidkit-footer .footer-title {
@@ -2498,10 +2540,14 @@ section,
   min-height: 340px;
   position: relative;
 }
-.contact-girl-img {
-  max-width: 340px;
+
+.contact-img-bg img {
   width: 100%;
-  border-radius: 60px;
+}
+
+.contact-girl-img {
+  width: 100%;
+  /* border-radius: 60px; */
   background: none;
 }
 .contact-form-box {
@@ -2509,11 +2555,11 @@ section,
   padding: 0 0 0 0;
 }
 .contact-title {
-  color: #018FD1;
+  color: #018fd1;
   font-weight: 800;
   font-size: 48px;
   margin-bottom: 0.5rem;
-  font-family: 'Sniglet', cursive;
+  font-family: "Sniglet", cursive;
 }
 .contact-subtitle {
   color: #1a2340;
@@ -2563,19 +2609,13 @@ section,
   color: #fff;
   border-color: #a98cf8;
 }
-#charCount {
+.charCount {
   color: #a98cf8;
   font-weight: 600;
 }
 @media (max-width: 991px) {
-  .contact-title {
-    font-size: 1.5rem;
-  }
   .contact-img-bg {
     min-height: 220px;
-  }
-  .contact-girl-img {
-    max-width: 220px;
   }
 }
 @media (max-width: 767px) {
@@ -2588,9 +2628,6 @@ section,
   .contact-img-bg {
     min-height: 120px;
   }
-  .contact-girl-img {
-    max-width: 120px;
-  }
 }
 
 .pequeswap-section {
@@ -2598,11 +2635,11 @@ section,
   padding: 60px 0 40px 0;
 }
 .pequeswap-title {
-  color: #018FD1;
+  color: #018fd1;
   font-weight: 800;
   font-size: 48px;
   margin-bottom: 0.5rem;
-  font-family: 'Sniglet', cursive;
+  font-family: "Sniglet", cursive;
 }
 .pequeswap-desc {
   color: #1a2340;
@@ -2622,22 +2659,30 @@ section,
 .pequeswap-step {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* Changed from flex-start to center */
   min-width: 150px;
   margin-right: 18px;
   margin-left: 18px;
+  text-align: center; /* Added to center text content */
 }
 .pequeswap-icon {
-  background: #ffe6cc;
-  color: #f88910;
+  /* background: #ffe6cc; */
+  color: #bc79cb;
   border-radius: 50%;
-  width: 38px;
-  height: 38px;
+  width: 100px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.6rem;
   margin-bottom: 6px;
+}
+.pequeswap-icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.pequeswap-icon img:hover {
+  animation: wiggle 0.5s ease-in-out infinite alternate;
 }
 .pequeswap-step-title {
   font-weight: 700;
@@ -2671,18 +2716,12 @@ section,
   background: linear-gradient(90deg, #7c5ae0 0%, #a98cf8 100%);
 }
 @media (max-width: 991px) {
-  .pequeswap-title {
-    font-size: 1.3rem;
-  }
   .pequeswap-bar {
     flex-direction: column;
     align-items: stretch;
     padding: 18px 8px;
   }
   .pequeswap-step {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     min-width: 0;
     margin: 0 0 12px 0;
     min-width: 220px;
@@ -2695,7 +2734,8 @@ section,
   }
   .pequeswap-icon {
     margin-bottom: 0;
-    margin-right: 10px;
+    width: 200px;
+    height: 200px;
   }
   .pequeswap-step-title {
     margin: 0;
@@ -2817,25 +2857,25 @@ section,
 /* ---- Galería de fotos de la comunidad ---- */
 .galeria-fotos-section .galeria-foto-card {
   background: var(--surface-color);
-  border-radius: 28px;
+  /* border-radius: 28px; */
   overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  /* box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07); */
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 220px;
+  /* height: 220px; */
   transition: transform 0.18s, box-shadow 0.18s;
 }
 .galeria-fotos-section .galeria-foto-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 28px;
+  /* border-radius: 28px; */
   transition: transform 0.18s;
 }
 .galeria-fotos-section .galeria-foto-card:hover {
   transform: scale(1.03);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.13);
+  /* box-shadow: 0 6px 24px rgba(0, 0, 0, 0.13); */
 }
 /* @media (max-width: 991px) {
   .galeria-fotos-section .galeria-foto-card {
@@ -2891,10 +2931,15 @@ section,
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.why-kidkit-icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .why-kidkit-section .why-kidkit-icon:hover {
   transform: translateY(-10px);
 }
-.why-kidkit-bg1 {
+/* .why-kidkit-bg1 {
   background: #00bfcf;
 }
 .why-kidkit-bg2 {
@@ -2915,7 +2960,7 @@ section,
 .why-kidkit-bg6 {
   background: #b6e47b;
   color: #222;
-}
+} */
 
 @media (max-width: 991px) {
   .why-kidkit-section .row {
@@ -3132,7 +3177,7 @@ section,
   display: block;
 }
 .pricing-title-kidkit {
-  font-family: 'Sniglet', cursive;
+  font-family: "Sniglet", cursive;
   font-size: 1.5rem;
   font-weight: 800;
   margin: 0 0 10px 0;
@@ -3171,7 +3216,7 @@ section,
 }
 .pricing-btn-kidkit {
   width: 100%;
-  background: #ff9800;
+  background: #bc79cb;
   color: #fff;
   border-radius: 12px;
   padding: 14px 0;
@@ -3184,7 +3229,7 @@ section,
   box-shadow: 0 2px 8px 0 rgba(60, 60, 60, 0.04);
 }
 .pricing-btn-kidkit:hover {
-  background: #e68900;
+  background: #9c59ab;
   color: #fff;
 }
 @media (max-width: 991px) {
@@ -3341,7 +3386,7 @@ section,
   padding: 24px 20px 20px 20px;
   font-size: 1.05rem;
   color: #222;
-  min-height: 130px;
+  min-height: 180px;
   margin-bottom: 0;
   font-family: "Poppins", sans-serif;
   transition: all 0.3s ease;
@@ -3358,7 +3403,7 @@ section,
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #f88910, #ff9800);
+  background: linear-gradient(90deg, #bc79cb, #bc79cb);
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -3366,7 +3411,7 @@ section,
 .feature-card-kidkit:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
-  border-color: #f88910;
+  border-color: #bc79cb;
 }
 
 .feature-card-kidkit:hover::before {
@@ -3378,7 +3423,7 @@ section,
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
   }
   50% {
-    box-shadow: 0 12px 40px rgba(248, 137, 16, 0.2);
+    box-shadow: 0 12px 40px #9c59ab33;
   }
   100% {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
@@ -3395,7 +3440,7 @@ section,
 }
 
 .feature-card-kidkit:hover b {
-  color: #f88910;
+  color: #bc79cb;
 }
 
 .feature-card-kidkit span {
@@ -3408,7 +3453,6 @@ section,
 
 /* Elige tu Kit Section */
 .elige-kit-section {
-  padding: 60px 0;
   background: #018fd1;
 }
 
@@ -3416,7 +3460,7 @@ section,
   color: #fff;
   font-size: 48px;
   font-weight: 700;
-  font-family: 'Sniglet', cursive;
+  font-family: "Sniglet", cursive;
 }
 
 .elige-kit-section .section-title p {
@@ -3471,7 +3515,7 @@ section,
   font-weight: 700;
   font-size: 28px;
   margin-bottom: 15px;
-  font-family: 'Sniglet', cursive;
+  font-family: "Sniglet", cursive;
 }
 
 .kit-content p {
@@ -3490,7 +3534,7 @@ section,
 .kit-price {
   font-size: 30px;
   font-weight: 700;
-  color: #f88910;
+  color: #bc79cb;
   margin-bottom: 15px;
   text-align: left;
   font-family: "Poppins", sans-serif;
@@ -3518,7 +3562,7 @@ section,
 }
 
 .btn-kit {
-  background: #f88910;
+  background: #bc79cb;
   color: #ffffff;
   padding: 12px 20px;
   border-radius: 8px;
@@ -3527,18 +3571,49 @@ section,
   font-size: 0.9rem;
   text-align: center;
   transition: all 0.3s ease;
-  border: none;
+  border: 2px solid #bc79cb;
   align-self: flex-start;
   width: 100%;
   display: block;
   font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-kit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #9c59ab, #9c59ab);
+  border: 2px solid #9c59ab;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
 .btn-kit:hover {
-  background: #ffffff;
-  color: #f88910;
-  border-color: #f88910;
+  color: #ffffff;
   transform: translateY(-2px);
+  animation: btn-pulse-glow 2s infinite;
+  border: 2px solid #9c59ab;
+}
+
+.btn-kit:hover::before {
+  transform: scaleX(1);
+}
+
+@keyframes btn-pulse-glow {
+  0% {
+    box-shadow: 0 4px 12px rgba(188, 121, 203, 0.3);
+  }
+  50% {
+    box-shadow: 0 8px 24px #9c59ab66;
+  }
+  100% {
+    box-shadow: 0 4px 12px rgba(188, 121, 203, 0.3);
+  }
 }
 
 @media (max-width: 991px) {
@@ -3592,6 +3667,16 @@ section,
   object-fit: contain;
 }
 
-.why-kidkit-section, .why-kidkit-section .why-kidkit-number, .why-kidkit-section .why-kidkit-label {
-  font-family: 'Poppins', sans-serif;
+.why-kidkit-section,
+.why-kidkit-section .why-kidkit-number,
+.why-kidkit-section .why-kidkit-label {
+  font-family: "Poppins", sans-serif;
+}
+
+.min-height-240 {
+  min-height: 240px;
+}
+
+.img-width-100 {
+  width: 100%;
 }
