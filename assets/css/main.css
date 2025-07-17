@@ -2194,12 +2194,12 @@ section,
 }
 .cf-title {
   font-weight: 800;
-  color: #009fe3;
+  color: #000;
   background: none;
   display: inline-block;
   padding: 0;
   border-radius: 0;
-  font-size: 1.1rem;
+  font-size: 17px;
   margin-bottom: 8px;
   margin-top: 8px;
   min-height: 55px;
