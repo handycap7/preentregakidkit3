@@ -1091,7 +1091,16 @@ section,
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
-.features {
+.features,
+.como-funciona,
+.marcas-section,
+.pequeswap-section,
+.why-kidkit-section,
+.galeria-fotos-section,
+.faq,
+.portfolio-includes-section,
+.portfolio-detail-benefits,
+.contact-section-kidkit {
   background: linear-gradient(90deg, #f8fcff 0%, #fffbe6 100%);
 }
 
@@ -1583,7 +1592,6 @@ section,
 # Faq Section
 --------------------------------------------------------------*/
 .faq .faq-container .faq-item {
-  background-color: var(--surface-color);
   position: relative;
   padding: 20px;
   margin-bottom: 15px;
@@ -2106,7 +2114,6 @@ section,
 
 /* Cómo Funciona Section */
 .como-funciona {
-  background: linear-gradient(90deg, #f8fcff 0%, #fffbe6 100%);
   padding: 60px 0 40px 0;
 }
 .como-funciona .section-title h2 {
@@ -2209,7 +2216,6 @@ section,
 }
 
 .marcas-section {
-  background: linear-gradient(90deg, #f8fcff 0%, #fffbe6 100%);
   padding: 40px 0 30px 0;
 }
 
@@ -2533,9 +2539,7 @@ section,
 }
 
 .contact-section-kidkit {
-  background: #fff;
   padding: 60px 0 40px 0;
-  margin-bottom: 48px;
 }
 .contact-img-bg {
   display: flex;
@@ -2635,7 +2639,6 @@ section,
 }
 
 .pequeswap-section {
-  background: #fff;
   padding: 60px 0 40px 0;
 }
 .pequeswap-title {
@@ -2860,7 +2863,6 @@ section,
 
 /* ---- Galería de fotos de la comunidad ---- */
 .galeria-fotos-section .galeria-foto-card {
-  background: var(--surface-color);
   /* border-radius: 28px; */
   overflow: hidden;
   /* box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07); */
@@ -2893,7 +2895,6 @@ section,
 
 /* ---- Sección Why KidKit ---- */
 .why-kidkit-section {
-  background: #fff;
   padding-bottom: 60px;
   margin-bottom: 40px;
 }
