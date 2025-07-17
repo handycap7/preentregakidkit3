@@ -12,11 +12,11 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Raleway", system-ui, -apple-system, "Segoe UI", Roboto,
+  --default-font: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway", sans-serif;
-  --nav-font: "Raleway", sans-serif;
+  --heading-font: "Poppins", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -767,11 +767,13 @@ section,
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  font-family: 'Sniglet', cursive;
+  color: #018FD1;
 }
 
 .section-title h2:after {
@@ -786,7 +788,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 #hero.hero.section {
-  background: url("../img/backgroundblue.png") center center no-repeat;
+  background: url("../img/fondo azul con detalles.png") center center no-repeat;
   background-size: cover;
 }
 
@@ -801,16 +803,17 @@ section,
 
 .hero h1 {
   margin: 0;
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 64px;
+  font-weight: 900;
   line-height: 56px;
+  font-family: 'Sniglet', cursive;
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: #fff;
   margin: 5px 0 30px 0;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .hero-img {
@@ -1103,6 +1106,9 @@ section,
 
 .testimonials .section-title h2 {
   color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: 'Sniglet', cursive;
 }
 
 .testimonials .section-title p {
@@ -1325,7 +1331,7 @@ section,
 .pricing h4 *,
 .pricing h4 sup,
 .pricing h4 span {
-  font-family: "Raleway", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
 .pricing .pricing-item {
   min-height: 340px;
@@ -2084,8 +2090,10 @@ section,
 .como-funciona .section-title h2 {
   font-weight: 800;
   letter-spacing: 1px;
-  font-size: 2rem;
+  font-size: 48px;
   margin-bottom: 0.5rem;
+  color: #018FD1;
+  font-family: 'Sniglet', cursive;
 }
 .como-funciona .section-title p {
   color: #444;
@@ -2147,10 +2155,11 @@ section,
   padding: 40px 0 30px 0;
 }
 .marcas-title {
-  color: #2996ea;
+  color: #018FD1;
   font-weight: 700;
-  font-size: 2.2rem;
+  font-size: 48px;
   margin-bottom: 32px;
+  font-family: 'Sniglet', cursive;
 }
 .marcas-logos-row {
   margin-top: 0;
@@ -2358,9 +2367,9 @@ section,
 }
 
 .kidkit-footer {
-  background: #b2db47;
+  background: #018FD1;
   color: #fff;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-top: none;
 }
 .kidkit-footer .footer-logo {
@@ -2479,10 +2488,11 @@ section,
   padding: 0 0 0 0;
 }
 .contact-title {
-  color: #1a2340;
+  color: #018FD1;
   font-weight: 800;
-  font-size: 2.3rem;
+  font-size: 48px;
   margin-bottom: 0.5rem;
+  font-family: 'Sniglet', cursive;
 }
 .contact-subtitle {
   color: #1a2340;
@@ -2567,10 +2577,11 @@ section,
   padding: 60px 0 40px 0;
 }
 .pequeswap-title {
-  color: #1a2340;
+  color: #018FD1;
   font-weight: 800;
-  font-size: 2.2rem;
+  font-size: 48px;
   margin-bottom: 0.5rem;
+  font-family: 'Sniglet', cursive;
 }
 .pequeswap-desc {
   color: #1a2340;
@@ -3100,7 +3111,7 @@ section,
   display: block;
 }
 .pricing-title-kidkit {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Sniglet', cursive;
   font-size: 1.5rem;
   font-weight: 800;
   margin: 0 0 10px 0;
@@ -3381,9 +3392,10 @@ section,
 }
 
 .elige-kit-section .section-title h2 {
-  color: #ffffff;
+  color: #fff;
+  font-size: 48px;
   font-weight: 700;
-  margin-bottom: 15px;
+  font-family: 'Sniglet', cursive;
 }
 
 .elige-kit-section .section-title p {
@@ -3436,8 +3448,9 @@ section,
 .kit-content h3 {
   color: #2c4964;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 28px;
   margin-bottom: 15px;
+  font-family: 'Sniglet', cursive;
 }
 
 .kit-content p {
@@ -3446,6 +3459,7 @@ section,
   line-height: 1.6;
   margin-bottom: 20px;
   flex-grow: 1;
+  font-family: "Poppins", sans-serif;
 }
 
 .kit-features {
@@ -3453,12 +3467,18 @@ section,
 }
 
 .kit-price {
-  font-size: 1.2rem;
+  font-size: 30px;
   font-weight: 700;
   color: #f88910;
   margin-bottom: 15px;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+}
+
+.kit-price::after {
+  content: " / mes";
+  font-weight: 300;
+  font-size: 0.8em;
 }
 
 .kit-feature {
@@ -3467,6 +3487,7 @@ section,
   font-size: 0.9rem;
   margin-bottom: 8px;
   padding-left: 5px;
+  font-family: "Poppins", sans-serif;
 }
 
 .kit-feature i {
@@ -3478,15 +3499,18 @@ section,
 .btn-kit {
   background: #f88910;
   color: #ffffff;
-  padding: 12px 25px;
-  border-radius: 25px;
+  padding: 12px 20px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
   text-align: center;
   transition: all 0.3s ease;
-  border: 2px solid #f88910;
+  border: none;
   align-self: flex-start;
+  width: 100%;
+  display: block;
+  font-family: "Poppins", sans-serif;
 }
 
 .btn-kit:hover {
@@ -3536,4 +3560,17 @@ section,
     padding: 10px 20px;
     font-size: 0.85rem;
   }
+}
+
+.kit-feature .check-icon {
+  width: 1.7em;
+  height: 1.7em;
+  margin-right: 8px;
+  vertical-align: middle;
+  display: inline-block;
+  object-fit: contain;
+}
+
+.why-kidkit-section, .why-kidkit-section .why-kidkit-number, .why-kidkit-section .why-kidkit-label {
+  font-family: 'Poppins', sans-serif;
 }

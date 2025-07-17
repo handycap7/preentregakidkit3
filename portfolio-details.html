@@ -81,20 +81,24 @@
 
   <main class="main">
     <!-- Hero Section -->
-    <section class="portfolio-hero-section py-5" style="background:#F6FAFD;">
+    <section id="hero" class="hero section accent-background">
+
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <h1 class="display-4 fw-bold mb-3">Kit Espacial KidKit</h1>
-            <p class="lead mb-4">Un viaje cósmico lleno de ciencia y creatividad para chicos curiosos. ¡Explorá el universo con actividades, experimentos y sorpresas cada mes!</p>
-            <a href="#" class="btn-getstarted" style="background:#F88910; color:#fff; border-radius:18px; padding:12px 36px; font-size:1.1rem; font-weight:600;">Suscribite ahora</a>
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h1>Exploradores Curiosos</h1>
+            <p>Un viaje cósmico lleno de ciencia y creatividad para chicos curiosos. ¡Explorá el universo con actividades, experimentos y sorpresas cada mes!</p>
+            <div class="d-flex">
+              <a href="#" class="btn-getstarted" style="background:#F88910; color:#fff; border-radius:18px; padding:12px 36; font-size:1.1m; font-weight:600;">Suscribite ahora</a>
+            </div>
           </div>
-          <div class="col-lg-5 text-center">
-            <img src="assets/img/scienceee.png" alt="Kit Espacial KidKit" class="img-fluid" style="max-width:380px;">
+          <div class="col-lg-6 order-1 order-lg-2 hero-img">
+            <img src="assets/img/juntosconnubes.png" class="img-fluid animated" alt="Niños juntos con nubes">
           </div>
         </div>
       </div>
-    </section>
+
+    </section><!-- /Hero Section -->
 
     <!-- Detalle y Beneficios -->
     <section class="portfolio-detail-benefits py-5">
@@ -147,6 +151,197 @@
       </div>
     </section>
 
+    <!-- Elige tu KidKit Section -->
+    <section class="elige-kit-section section py-5">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Otras suscripciones</h2>
+          <p>Elegí el plan que mejor se adapta a tus necesidades. Cada uno incluye diferentes beneficios pensados para vos.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <!-- <div class="col-lg-4 col-md-6">
+            <div class="kit-card">
+              <div class="kit-image">
+                <img src="assets/img/cajas/cajaciencia.png" alt="KidKit Ciencia" class="img-fluid">
+              </div>
+              <div class="kit-content">
+                <h3>Exploradores Curiosos</h3>
+                <p>Experimentá con la ciencia de manera divertida. Incluye experimentos, manualidades y sorpresas científicas.</p>
+                <div class="kit-features">
+                  <span class="kit-feature"><img src="assets/img/checkgreen.png" alt="check" class="check-icon"> Experimentos seguros</span>
+                  <span class="kit-feature"><img src="assets/img/checkgreen.png" alt="check" class="check-icon"> Materiales incluidos</span>
+                  <span class="kit-feature"><img src="assets/img/checkgreen.png" alt="check" class="check-icon"> Guía ilustrada</span>
+                </div>
+                <div class="kit-price">$24.000 ARG</div>
+                <a href="portfolio-details.html" class="btn-kit">Suscribirse</a>
+              </div>
+            </div>
+          </div> -->
+          <div class="col-lg-4 col-md-6">
+            <div class="kit-card">
+              <div class="kit-image">
+                <img src="assets/img/cajas/cajajardinero.png" alt="KidKit Jardín" class="img-fluid">
+              </div>
+              <div class="kit-content">
+                <h3>Manitos en la Tierra</h3>
+                <p>Conectá con la naturaleza. Plantá, cultivá y aprendé sobre el mundo verde que nos rodea.</p>
+                <div class="kit-features">
+                  <span class="kit-feature"><img src="assets/img/checkgreen.png" alt="check" class="check-icon"> Semillas y macetas</span>
+                  <span class="kit-feature"><img src="assets/img/checkgreen.png" alt="check" class="check-icon"> Herramientas seguras</span>
+                  <span class="kit-feature"><img src="assets/img/checkgreen.png" alt="check" class="check-icon"> Guía de cultivo</span>
+                </div>
+                <div class="kit-price">$22.000 ARG</div>
+                <a href="#" class="btn-kit">Suscribirse</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="kit-card">
+              <div class="kit-image">
+                <img src="assets/img/cajas/cajarepostero.png" alt="KidKit Repostero" class="img-fluid">
+              </div>
+              <div class="kit-content">
+                <h3>Mini Chefs Dulceros</h3>
+                <p>Despertá el chef que llevás dentro. Prepará deliciosas recetas y dulces caseros con toda la familia.</p>
+                <div class="kit-features">
+                  <span class="kit-feature"><img src="assets/img/checkgreen.png" alt="check" class="check-icon"> Recetas fáciles</span>
+                  <span class="kit-feature"><img src="assets/img/checkgreen.png" alt="check" class="check-icon"> Ingredientes seguros</span>
+                  <span class="kit-feature"><img src="assets/img/checkgreen.png" alt="check" class="check-icon"> Guía paso a paso</span>
+                </div>
+                <div class="kit-price">$26.000 ARG</div>
+                <a href="#" class="btn-kit">Suscribirse</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marcas Section -->
+    <section class="marcas-section py-5">
+      <div class="container text-center">
+        <h2 class="marcas-title">Medios de pago</h2>
+        <div class="row justify-content-center align-items-center marcas-logos-row">
+          <div class="col-6 col-md-3 col-lg-3">
+            <img src="assets/img/marcas/Kiwi.png" alt="KiwiCo" class="marcas-logo img-fluid" style="max-height:60px;">
+          </div>
+          <div class="col-6 col-md-3 col-lg-3">
+            <img src="assets/img/marcas/citykids.png" alt="CityKids" class="marcas-logo img-fluid"
+              style="max-height:60px;">
+          </div>
+          <div class="col-6 col-md-3 col-lg-3">
+            <img src="assets/img/marcas/fabercastell.png" alt="Faber-Castell" class="marcas-logo img-fluid faber-logo"
+              style="max-height:140px;">
+          </div>
+          <div class="col-6 col-md-3 col-lg-3">
+            <img src="assets/img/marcas/sodimac.png" alt="Sodimac" class="marcas-logo img-fluid"
+              style="max-height:60px;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section light-background py-5">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Familias felices</h2>
+        <p>Conocé lo que opinan las familias que recibieron nuestras cajas.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper init-swiper" data-speed="600" data-delay="500" data-breakpoints='{"320":{"slidesPerView":1,"spaceBetween":40},"1200":{"slidesPerView":"auto","spaceBetween":20}}'>
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": "auto",
+                  "spaceBetween": 20
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>LaKidKit fue una sorpresa increíble para mis hijos. Cada actividad los mantuvo entretenidos y
+                    aprendieron un montón. ¡Ya estamos esperando la próxima caja!"</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <h3>María Fernández</h3>
+                <h4>Mamá de dos peques</h4>
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>"Me encantó la calidad de los materiales y lo fácil que fue seguir las instrucciones.
+                    Compartimos momentos únicos en familia. ¡Recomiendo KidKit a todos!"</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <h3>Lucas Pereyra</h3>
+                <h4>Papá y docente</h4>
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>"Las actividades de la caja son súper creativas y educativas. Mi hija se divirtió muchísimo y
+                    aprendió cosas nuevas jugando."</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <h3>Florencia Ruiz</h3>
+                <h4>Mamá primeriza</h4>
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>"¡Excelente propuesta! Nos encantó la variedad de actividades y la posibilidad de compartir
+                    tiempo de calidad en casa."</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <h3>Javier Gómez</h3>
+                <h4>Papá de mellizos</h4>
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>"La KidKit llegó justo a tiempo para un fin de semana lluvioso. ¡Fue la salvación! Los chicos no
+                    pararon de jugar y crear."</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <h3>Andrea López</h3>
+                <h4>Mamá creativa</h4>
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- FAQ -->
     <section class="faq section py-5">
       <div class="container">
@@ -187,6 +382,61 @@
       </div>
     </section>
   </main>
+
+  <!-- Contact Section -->
+  <section class="contact-section-kidkit py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center mb-4 mb-lg-0">
+          <div class="contact-img-bg">
+            <img src="assets/img/kid2.png" alt="Contacto KidKit" class="img-fluid contact-girl-img"
+              style="max-width:340px;">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="contact-form-box">
+            <h2 class="contact-title">¿Hablás con nosotros?</h2>
+            <p class="contact-subtitle">Si tenés dudas, sugerencias o querés saber más sobre KidKit, completá el
+              formulario y te respondemos lo antes posible.</p>
+            <form class="contact-form-kidkit">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Nombre</label>
+                  <input type="text" class="form-control" placeholder="Ingresá tu nombre">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Apellido</label>
+                  <input type="text" class="form-control" placeholder="Ingresá tu apellido">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">¿Sobre qué querés hablar?</label>
+                  <select class="form-select">
+                    <option selected>Seleccioná el motivo de contacto</option>
+                    <option value="1">Consulta general</option>
+                    <option value="2">Soporte</option>
+                    <option value="3">Sugerencia</option>
+                    <option value="4">Otro</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" placeholder="ej.: nombre@email.com">
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Mensaje</label>
+                  <textarea class="form-control contact-textarea" rows="4" maxlength="500" placeholder="Contanos en qué te podemos ayudar..."></textarea>
+                  <div class="text-end small text-muted mt-1" id="charCount">0</div> of 500
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-kit">¡Esperamos tu mensaje!</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer id="footer" class="footer kidkit-footer">
     <div class="container py-5">
